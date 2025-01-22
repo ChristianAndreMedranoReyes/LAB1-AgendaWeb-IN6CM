@@ -1,0 +1,16 @@
+body {
+    background-image: url('https://wallpapers.com/images/hd/blue-gray-3840-x-2160-2wj8ikgguo4or2zi.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #007bff;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
+  }
