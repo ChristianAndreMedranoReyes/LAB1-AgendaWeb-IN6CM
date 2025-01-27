@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos - Agenda Web</title>
+    <link href="perfil.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Contactos/contactos.html">Volver</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Pendientes/toDoList.html">Tareas y Pendientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">AgendaWeb</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://static.vecteezy.com/system/resources/previews/026/434/417/non_2x/default-avatar-profile-icon-of-social-media-user-photo-vector.jpg" class="img-fluid rounded-start" alt="Imagen de perfil">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Datos del Usuario</h5>
+                        <div class="mb-3">
+                            <label class="form-label">Correo Electrónico:</label>
+                            <p id="userEmail" class="card-text"></p>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Contraseña:</label>
+                            <p id="userPassword" class="card-text"></p>
+                        </div>
+                        <p class="card-text"><small class="text-body-secondary">no compartiremos su info. con terceros</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer text-center mt-3">
+        <p>&copy; 2025 Agenda Web - Todos los derechos reservados</p>
+    </div>
+
+    <script>
+        const userEmail = localStorage.getItem('email');
+        const userPassword = localStorage.getItem('password');
+
+        document.getElementById('userEmail').textContent = userEmail || "No se ha ingresado un correo";
+        document.getElementById('userPassword').textContent = userPassword || "No se ha ingresado una contraseña";
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
